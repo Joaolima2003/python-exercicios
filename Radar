@@ -1,0 +1,17 @@
+#Escreva um programa que leia a velocidade de um carro. Se ele ultrapassar 80km/h , será multado em R$ 7,00.
+from time import sleep
+velmax = 80
+vel = float(input('Qual a velocidade atual do carro? '))
+print('Bom dia, dirija com segurança!!!')
+print('Então a velocidade atual do seu carro é {} km/h'.format(vel))
+print( '-=-' * 10 )
+print('           Radar...')
+print( '-=-' * 10 )
+sleep(2)
+if vel > velmax:
+    print('Você ultrapassou o limite de velocidade de 80 km/h, irá ser multado.')
+    multa = (vel - velmax) * 7
+    print('O valor da multa será de R${}'.format(multa))
+else:
+    print('Siga em frente')
+    
