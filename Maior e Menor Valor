@@ -1,0 +1,16 @@
+#Faça um programa que leia três valor inteiro e mostre o Maior e o Menor
+num1 = int(input('Digite um numero'))
+num2 = int(input('Digite um numero'))
+num3 = int(input('Digite um numero'))
+if num1 > num2 and num1 > num3: #Número maior
+    print('O numero {} é o maior'.format(num1))
+elif num1 < num2 and num2 > num3:
+    print('O numero {} é o maior'.format(num2))
+else:
+    print('O numero {} é o maior'.format(num3))
+if num1 < num2 and num1 < num3:#Número menor
+    print('O numero {} é o menor'.format(num1))
+elif num1 > num2 and num2 < num3:
+    print('O numero {} é o menor'.format(num2))
+else:
+    print('O numero {} é o menor'.format(num3))    
