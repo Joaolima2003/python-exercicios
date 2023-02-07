@@ -1,0 +1,11 @@
+from random import randint
+from time import sleep
+chute = int(input('Digite um numero entre 0 e 5')) # Usúario chuta um numero
+print('Processando...')
+sleep(3)
+computador = randint(0, 5) # FAZ O COMPUTADOR PENSAR
+print('pensei em um numero {}'.format(computador))
+if chute == computador:
+    print('O usuário venceu')
+else:
+    print('o usuário perdeu')
