@@ -1,3 +1,4 @@
+#Escreva um programa onde o usúario tenta advinhar qual o número que será escolhido pelo computador, caso acerte exiba 'O usúario venceu', caso não 'o usúario perdeu'
 from random import randint
 from time import sleep
 chute = int(input('Digite um numero entre 0 e 5')) # Usúario chuta um numero
