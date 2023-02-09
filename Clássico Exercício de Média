@@ -3,7 +3,7 @@ nota1 = float(input('Digite sua segunda nota: '))
 media = (nota + nota) /2
 if media < 5:
     print('Media abaixo de 5 REPROVADO')
-elif media > 5 and media < 6.9:
-    print('Média entre 5 e 6.9 RECUPERAÇÃO')
+elif media >= 5 and media < 7.0:
+    print('Média entre 5 e 7.0 RECUPERAÇÃO')
 else:
     print('Média maior que 7.0 APROVADO')
