@@ -1,0 +1,11 @@
+casa = float(input('Qual o valor da casa que será comprada?'))
+salario = float(input('Qual o seu salário mensal?'))
+anos = int(input('Em quantos anos voçê irá pagar?'))
+prestacaoMensal = casa / (anos * 12)
+minimo = salario * 0.30
+print('Para pagar uma casa de R${:.2f} em R${} anos'.format(casa , anos))
+print('A prestação será de R${:.2f}'.format(prestacaoMensal))
+if prestacaoMensal <= minimo:
+    print('EMPRESTIMO PODE SER APROVADO')
+else:
+    print('EMPRESTIMO NEGADO')
