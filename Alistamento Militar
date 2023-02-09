@@ -1,14 +1,23 @@
-ano = int(input('Digite o ano do seu nascimento:'))
+print('-=-' * 20)
+print('                 ALISTAMENTO MILITAR')
+print('-=-' * 20)
+sexo = str(input('Qual é o seu sexo? Masculino = M e Feminino = F: '))
 anoAtual = 2023
-idade = anoAtual - ano
-print('O ano que você nasceu foi em {} e a sua idade é {} anos'.format(ano , idade))
-if idade < 18:
-    TempA = 18 - idade 
-    print('Ainda vai se alistar ao serviço militar')
-    print('Falta {} anos/ano para você se alistar'.format(TempA))
-elif idade > 18:
-    TempA = idade - 18
-    print('Já passou do tempo do seu alistamento militar')
-    print('O tempo que passou foi de {} anos/ano'.format(TempA))
+if sexo.upper() == 'M':
+    ano = int(input('Digite o ano do seu nascimento:'))
+    idade = anoAtual - ano
+    print('O ano que você nasceu foi em {} e a sua idade é {} anos'.format(ano , idade))
+    if idade < 18:
+        TempA = 18 - idade 
+        print('Ainda vai se alistar ao serviço militar')
+        print('Falta {} anos/ano para você se alistar'.format(TempA))
+    elif idade > 18:
+        TempA = idade - 18
+        print('Já passou do tempo do seu alistamento militar')
+        print('O tempo que passou foi de {} anos/ano'.format(TempA))
+    else:
+        print('Hora de se alistar ao serviço militar')
 else:
-    print('Hora de se alistar ao serviço militar')
+    print('VOCÊ NÃO PRECISA FAZER O ALISTAMENTO OBRIGATÓRIO')
+
+    
