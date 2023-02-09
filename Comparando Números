@@ -1,0 +1,8 @@
+num = int(input('Digite o primeiro numero'))
+num1 = int(input('Digite o segundo numero'))
+if num > num1:
+    print('O primeiro valor {} é Maior'.format(num))
+elif num < num1:
+    print('O segundo valor {} é Maior'.format(num1))
+else:
+    print('Não existe valor Maior, os números são iguais')
