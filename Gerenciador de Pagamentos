@@ -1,0 +1,20 @@
+produto = float(input('Digite o valor do produto:'))
+print('\n[1] - A vista cheque/dinheiro \n[2] - A vista no cartão \n[3] - Em até 2x no cartão \n[4] - 3x ou mais no cartão')
+opcao = int(input('Sua opção:'))
+if opcao == 1:
+    valorFinal = produto - (produto * 0.10)
+    print('O valor foi pago a vista em cheque/dinheiro e obteve um desconto de 10%')
+    print('O valor do produto era de R${} e passou a ser R${}'.format(produto , valorFinal))
+if opcao == 2:
+    valorFinal = produto - (produto * 0.05)
+    print('O valor foi pago a vista no cartão e obteve um desconto de 5%')
+    print('O valor do produto era de R${} e passou a ser R${}'.format(produto , valorFinal))
+if opcao == 3:
+    print('O valor foi pago em até 2x no cartão e o preço ficou normal')
+    print('O valor do produto era de R${} e continuou sendo R${}'.format(produto , produto))
+if opcao == 4:
+    valorFinal = produto + (produto * 0.20)
+    print('O valor foi pago em 3x ou mais e obteve um juros de 20% no preço do produto')
+    print('O valor do produto era de R${} e passou a ser R${}'.format(produto , valorFinal))
+    
+    
