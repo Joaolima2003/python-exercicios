@@ -1,8 +1,9 @@
 print('=' * 40)      
 print('        10 TERMOS DE UMA PA')
-print('=' * 40)  
+print('=' * 40)
 primeiroT = int(input('Primeiro Termo:'))
 razao = int(input('Razão:'))
-for c in range(primeiroT , 10 + 1 , razao):
+decimo = primeiroT + (10 - 1) * razao
+for c in range(primeiroT , decimo + razao , razao):
     print('{}'.format(c), end=' -> ')
 print('ACABOU')    
