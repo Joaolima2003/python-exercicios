@@ -1,0 +1,14 @@
+Maiorpeso = 0
+Menorpeso = 0
+for count in range(1,5+1):
+    peso = float(input('Digite da {} pessoa:\n'.format(count)))
+    if count == 1:
+        Maiorpeso = peso 
+        Menorpeso = peso 
+    else:
+        if peso > Maiorpeso:
+            Maiorpeso = peso
+        if peso < Menorpeso:
+            Menorpeso = peso
+print('O maior peso foi {}'.format(Maiorpeso))
+print('O menor peso foi {}'.format(Menorpeso))
