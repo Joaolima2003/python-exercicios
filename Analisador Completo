@@ -3,7 +3,7 @@ somaidade = 0
 mediaidade = 0
 maioridadehomem = 0
 totmulher = 0
-for count in range(1, 3+1):
+for count in range(1, 4+1):
     print('----- {} Pessoa -----'.format(count))
     nome = str(input('Digite o seu NOME:')).upper().strip()
     idade = int(input('Digite a sua IDADE:'))
@@ -21,4 +21,3 @@ for count in range(1, 3+1):
 print('A media da idade do grupo é {}'.format(mediaidade))
 print('O nome do homem mais velho é {} e sua idade {} anos'.format(nomevelho, maioridadehomem))
 print('O total de mulheres que tem menos de vinte anos são {} mulheres'.format(totmulher))
-        
