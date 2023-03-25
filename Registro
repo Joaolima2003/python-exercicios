@@ -1,0 +1,23 @@
+cont = 0
+total_Man = total_Woman = total_People = 0
+print('Person Registration')
+while True:
+    idade = int(input('Qual a sua idade?'))
+    sexo = ' '
+    while sexo not in 'MF':
+        sexo = str(input('Digite o seu sexo [M/F]:')).strip().upper()[0]
+    if idade >= 18:
+        total_People += 1
+    if sexo == 'M':
+        total_Man += 1
+    if idade < 20 and sexo == 'F':
+        total_Woman += 1
+    resp = ' '    
+    while resp not in 'SN':
+        resp = str(input('Quer continuar [S/N]:')).upper().strip()[0]
+    if resp == 'N':
+        break
+print(f'Total de pessoas maiores que 18 anos {total_People}')
+print(f'Total de homens {total_Man}')
+print(f'Total de mulheres com menos de 20 anos {total_Woman}')
+        
